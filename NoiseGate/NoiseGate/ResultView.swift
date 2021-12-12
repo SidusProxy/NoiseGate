@@ -6,16 +6,30 @@
 //
 
 import SwiftUI
-
+import SoundAnalysis
+import CoreML
+import AudioKit
 struct ResultView: View {
+    // Use a default model configuration.
+    static let defaultConfig = MLModelConfiguration()
+
+    // Create an instance of the sound classifier's wrapper class.
+   static let soundClassifier = try? NoiseGate.init(configuration: defaultConfig)
+
+    // Create a classify sound request that uses the custom sound classifier.
+    let request = try? SNClassifySoundRequest(mlModel: soundClassifier!.model)
+    let resultsObserver = ResultsObserver()
+
+    
+    
      var audio:AudioRecorder = AudioRecorder()
     @State var image:String = "alarm.fill"
-    @State var recognition:String = " fucking clock"
+    @State var recognition:String = "fucking clock"
     @State var decibel:String = "123.44"
     @State  var phase = 0.0
     @Binding var media:Float
     @State var timer: Timer? = nil
-
+    @State var audioFileAnalyzer:SNAudioFileAnalyzer? = nil
     
     var body: some View {
         ZStack{
@@ -25,12 +39,84 @@ struct ResultView: View {
             Spacer()
             RadialGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), center: .center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5, endRadius: 130).mask(Image(systemName: image).resizable().frame(width: 150.0, height: 150.0).imageScale(.large)).frame(width: 150.0, height: 150.0)
             Spacer()
-            Text("Oh dude, it seems that you are hearing a"+recognition+"!").foregroundColor(.white)
+            Text("Oh dude, it seems that you are hearing a "+recognition+"!").foregroundColor(.white)
                 .frame(width: 300, height: 50).multilineTextAlignment(.center)
             Text(decibel+" dB").foregroundColor(.white).fontWeight(.bold)
                 .frame(width: 150, height: 50)
             Text("You are in a very loud place").foregroundColor(.white)
-                .frame(width: 150, height: 50).multilineTextAlignment(.center)
+                .frame(width: 150, height: 50).multilineTextAlignment(.center).onAppear(perform: {
+                  audioFileAnalyzer = createAnalyzer()
+                    try? audioFileAnalyzer?.add(request!, withObserver: resultsObserver)
+                    audioFileAnalyzer?.analyze()
+                    recognition=resultsObserver.classification2?.identifier ?? ""
+                    
+                    if(recognition==""){
+                        
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }else if(recognition==""){
+                        image=""
+                    }
+
+                })
             Spacer()
             
             ZStack {
@@ -46,6 +132,7 @@ struct ResultView: View {
 //                timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
 //                    self.phase = .pi * 2
 //                }
+                
                 UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
 
                 decibel="\(media)"
@@ -55,6 +142,11 @@ struct ResultView: View {
             }
         }.navigationTitle("Result")
         }
+    }
+    
+    func createAnalyzer() -> SNAudioFileAnalyzer? {
+        audio.fetchRecordings()
+        return try? SNAudioFileAnalyzer(url: audio.recordings[0].fileURL)
     }
 }
 

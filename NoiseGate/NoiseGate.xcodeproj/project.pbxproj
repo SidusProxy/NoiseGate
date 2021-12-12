@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86D92A22766A894000F10F3 /* NoiseGate.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D86D92A12766A893000F10F3 /* NoiseGate.mlmodel */; };
+		D86D92A42766AA3A000F10F3 /* ResultObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D92A32766AA3A000F10F3 /* ResultObserver.swift */; };
 		D8DE830B2761F70A00F4B2A0 /* NoiseGateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */; };
 		D8DE830D2761F70A00F4B2A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE830C2761F70A00F4B2A0 /* ContentView.swift */; };
 		D8DE830F2761F70B00F4B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE830E2761F70B00F4B2A0 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D86D92A12766A893000F10F3 /* NoiseGate.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NoiseGate.mlmodel; sourceTree = "<group>"; };
+		D86D92A32766AA3A000F10F3 /* ResultObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultObserver.swift; sourceTree = "<group>"; };
 		D8DE83072761F70A00F4B2A0 /* NoiseGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoiseGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGateApp.swift; sourceTree = "<group>"; };
 		D8DE830C2761F70A00F4B2A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */,
+				D86D92A12766A893000F10F3 /* NoiseGate.mlmodel */,
 				D8DE830C2761F70A00F4B2A0 /* ContentView.swift */,
 				D8DE830E2761F70B00F4B2A0 /* Assets.xcassets */,
 				D8DE83132761F70B00F4B2A0 /* Persistence.swift */,
@@ -77,6 +82,7 @@
 				D8DE831F2762024600F4B2A0 /* AudioVisualizerIniter.swift */,
 				D8DE832127635CFB00F4B2A0 /* NotClickedRecButton.swift */,
 				D8DE83292764DF6200F4B2A0 /* ResultView.swift */,
+				D86D92A32766AA3A000F10F3 /* ResultObserver.swift */,
 			);
 			path = NoiseGate;
 			sourceTree = "<group>";
@@ -168,8 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DE832227635CFC00F4B2A0 /* NotClickedRecButton.swift in Sources */,
+				D86D92A22766A894000F10F3 /* NoiseGate.mlmodel in Sources */,
 				D8DE83142761F70B00F4B2A0 /* Persistence.swift in Sources */,
 				D8DE83172761F70B00F4B2A0 /* NoiseGate.xcdatamodeld in Sources */,
+				D86D92A42766AA3A000F10F3 /* ResultObserver.swift in Sources */,
 				D8DE830D2761F70A00F4B2A0 /* ContentView.swift in Sources */,
 				D8DE83202762024600F4B2A0 /* AudioVisualizerIniter.swift in Sources */,
 				D8DE832A2764DF6200F4B2A0 /* ResultView.swift in Sources */,
