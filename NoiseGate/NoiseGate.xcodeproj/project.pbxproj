@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8DE830B2761F70A00F4B2A0 /* NoiseGateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */; };
+		D8DE830D2761F70A00F4B2A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE830C2761F70A00F4B2A0 /* ContentView.swift */; };
+		D8DE830F2761F70B00F4B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE830E2761F70B00F4B2A0 /* Assets.xcassets */; };
+		D8DE83122761F70B00F4B2A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE83112761F70B00F4B2A0 /* Preview Assets.xcassets */; };
+		D8DE83142761F70B00F4B2A0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE83132761F70B00F4B2A0 /* Persistence.swift */; };
+		D8DE83172761F70B00F4B2A0 /* NoiseGate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8DE83152761F70B00F4B2A0 /* NoiseGate.xcdatamodeld */; };
+		D8DE831E2761F75900F4B2A0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE831D2761F75900F4B2A0 /* AudioRecorder.swift */; };
+		D8DE83202762024600F4B2A0 /* AudioVisualizerIniter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE831F2762024600F4B2A0 /* AudioVisualizerIniter.swift */; };
+		D8DE832227635CFC00F4B2A0 /* NotClickedRecButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE832127635CFB00F4B2A0 /* NotClickedRecButton.swift */; };
+		D8DE83252763696B00F4B2A0 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = D8DE83242763696B00F4B2A0 /* AudioKitUI */; };
+		D8DE832827636B5700F4B2A0 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8DE832727636B5700F4B2A0 /* AudioKit */; };
+		D8DE832A2764DF6200F4B2A0 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE83292764DF6200F4B2A0 /* ResultView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8DE83072761F70A00F4B2A0 /* NoiseGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoiseGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGateApp.swift; sourceTree = "<group>"; };
+		D8DE830C2761F70A00F4B2A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8DE830E2761F70B00F4B2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8DE83112761F70B00F4B2A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8DE83132761F70B00F4B2A0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D8DE83162761F70B00F4B2A0 /* NoiseGate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoiseGate.xcdatamodel; sourceTree = "<group>"; };
+		D8DE831D2761F75900F4B2A0 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		D8DE831F2762024600F4B2A0 /* AudioVisualizerIniter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerIniter.swift; sourceTree = "<group>"; };
+		D8DE832127635CFB00F4B2A0 /* NotClickedRecButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotClickedRecButton.swift; sourceTree = "<group>"; };
+		D8DE83292764DF6200F4B2A0 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8DE83042761F70A00F4B2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DE832827636B5700F4B2A0 /* AudioKit in Frameworks */,
+				D8DE83252763696B00F4B2A0 /* AudioKitUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8DE82FE2761F70A00F4B2A0 = {
+			isa = PBXGroup;
+			children = (
+				D8DE83092761F70A00F4B2A0 /* NoiseGate */,
+				D8DE83082761F70A00F4B2A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8DE83082761F70A00F4B2A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE83072761F70A00F4B2A0 /* NoiseGate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DE83092761F70A00F4B2A0 /* NoiseGate */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE830A2761F70A00F4B2A0 /* NoiseGateApp.swift */,
+				D8DE830C2761F70A00F4B2A0 /* ContentView.swift */,
+				D8DE830E2761F70B00F4B2A0 /* Assets.xcassets */,
+				D8DE83132761F70B00F4B2A0 /* Persistence.swift */,
+				D8DE83152761F70B00F4B2A0 /* NoiseGate.xcdatamodeld */,
+				D8DE83102761F70B00F4B2A0 /* Preview Content */,
+				D8DE831D2761F75900F4B2A0 /* AudioRecorder.swift */,
+				D8DE831F2762024600F4B2A0 /* AudioVisualizerIniter.swift */,
+				D8DE832127635CFB00F4B2A0 /* NotClickedRecButton.swift */,
+				D8DE83292764DF6200F4B2A0 /* ResultView.swift */,
+			);
+			path = NoiseGate;
+			sourceTree = "<group>";
+		};
+		D8DE83102761F70B00F4B2A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE83112761F70B00F4B2A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8DE83062761F70A00F4B2A0 /* NoiseGate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DE831A2761F70B00F4B2A0 /* Build configuration list for PBXNativeTarget "NoiseGate" */;
+			buildPhases = (
+				D8DE83032761F70A00F4B2A0 /* Sources */,
+				D8DE83042761F70A00F4B2A0 /* Frameworks */,
+				D8DE83052761F70A00F4B2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoiseGate;
+			packageProductDependencies = (
+				D8DE83242763696B00F4B2A0 /* AudioKitUI */,
+				D8DE832727636B5700F4B2A0 /* AudioKit */,
+			);
+			productName = NoiseGate;
+			productReference = D8DE83072761F70A00F4B2A0 /* NoiseGate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8DE82FF2761F70A00F4B2A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D8DE83062761F70A00F4B2A0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = D8DE83022761F70A00F4B2A0 /* Build configuration list for PBXProject "NoiseGate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8DE82FE2761F70A00F4B2A0;
+			packageReferences = (
+				D8DE83232763696B00F4B2A0 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				D8DE832627636B5700F4B2A0 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = D8DE83082761F70A00F4B2A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8DE83062761F70A00F4B2A0 /* NoiseGate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8DE83052761F70A00F4B2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DE83122761F70B00F4B2A0 /* Preview Assets.xcassets in Resources */,
+				D8DE830F2761F70B00F4B2A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8DE83032761F70A00F4B2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DE832227635CFC00F4B2A0 /* NotClickedRecButton.swift in Sources */,
+				D8DE83142761F70B00F4B2A0 /* Persistence.swift in Sources */,
+				D8DE83172761F70B00F4B2A0 /* NoiseGate.xcdatamodeld in Sources */,
+				D8DE830D2761F70A00F4B2A0 /* ContentView.swift in Sources */,
+				D8DE83202762024600F4B2A0 /* AudioVisualizerIniter.swift in Sources */,
+				D8DE832A2764DF6200F4B2A0 /* ResultView.swift in Sources */,
+				D8DE830B2761F70A00F4B2A0 /* NoiseGateApp.swift in Sources */,
+				D8DE831E2761F75900F4B2A0 /* AudioRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8DE83182761F70B00F4B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8DE83192761F70B00F4B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8DE831B2761F70B00F4B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoiseGate/Preview Content\"";
+				DEVELOPMENT_TEAM = HC6WH4RY5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sidus.NoiseGate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8DE831C2761F70B00F4B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoiseGate/Preview Content\"";
+				DEVELOPMENT_TEAM = HC6WH4RY5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sidus.NoiseGate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8DE83022761F70A00F4B2A0 /* Build configuration list for PBXProject "NoiseGate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DE83182761F70B00F4B2A0 /* Debug */,
+				D8DE83192761F70B00F4B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8DE831A2761F70B00F4B2A0 /* Build configuration list for PBXNativeTarget "NoiseGate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DE831B2761F70B00F4B2A0 /* Debug */,
+				D8DE831C2761F70B00F4B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8DE83232763696B00F4B2A0 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D8DE832627636B5700F4B2A0 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8DE83242763696B00F4B2A0 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8DE83232763696B00F4B2A0 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		D8DE832727636B5700F4B2A0 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8DE832627636B5700F4B2A0 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D8DE83152761F70B00F4B2A0 /* NoiseGate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8DE83162761F70B00F4B2A0 /* NoiseGate.xcdatamodel */,
+			);
+			currentVersion = D8DE83162761F70B00F4B2A0 /* NoiseGate.xcdatamodel */;
+			path = NoiseGate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8DE82FF2761F70A00F4B2A0 /* Project object */;
+}
