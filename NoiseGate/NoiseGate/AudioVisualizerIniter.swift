@@ -8,7 +8,7 @@
 import Foundation
 import AVFoundation
 import SwiftUI
-
+import AudioKit
 class AudioVisualizer: ObservableObject {
     
      var audioRecorder: AVAudioRecorder

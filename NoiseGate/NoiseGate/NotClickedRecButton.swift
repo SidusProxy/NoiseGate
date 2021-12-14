@@ -50,13 +50,14 @@ struct NotClickedRecButton: View {
                         Spacer()
                         
                         ZStack{
-                            RadialGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), center: .center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5, endRadius: 130).mask(Image(systemName: "circle").resizable().frame(width: 150.0, height: 150.0).imageScale(.large)).frame(width: 150.0, height: 150.0)
                             HStack{
                                 ForEach(mic.soundSamples, id: \.self) { level in
                                     BarView(value: self.normalizeSoundLevel(level: level))
                                 }
                             }.frame(width: 150,height: 150)
                             
+                            RadialGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), center: .center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5, endRadius: 110).mask(Image(systemName: "circle").resizable().frame(width: 150.0, height: 150.0).imageScale(.large)).frame(width: 150.0, height: 150.0)
+                           
                             
                         }.frame(width: 50,height: 100)
                             .padding(.bottom, 100)
@@ -67,8 +68,8 @@ struct NotClickedRecButton: View {
                             Spacer()
                             ZStack{
                                 if(clickinternal){
-                                    LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Rectangle().cornerRadius(10)).frame(width: 150, height: 50)
-                                    Text("Internal").foregroundColor(.white).fontWeight(.bold)
+                                    Rectangle().foregroundColor(.white).cornerRadius(10).frame(width: 150, height: 50)
+                                    Text("Internal").foregroundColor(.black).fontWeight(.bold)
                                 }else{
                                     Text("Internal").foregroundColor(.white)
                                         .frame(width: 150, height: 50)
@@ -86,8 +87,8 @@ struct NotClickedRecButton: View {
                             Spacer()
                             ZStack{
                                 if(clickexternal){
-                                    LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Rectangle().cornerRadius(10)).frame(width: 150, height: 50)
-                                    Text("External").foregroundColor(.white).fontWeight(.bold)
+                                    Rectangle().foregroundColor(.white).cornerRadius(10).frame(width: 150, height: 50)
+                                    Text("External").foregroundColor(.black).fontWeight(.bold)
                                 }else{
                                     Text("External").foregroundColor(.white)
                                         .frame(width: 150, height: 50)
@@ -106,7 +107,7 @@ struct NotClickedRecButton: View {
                             
                         }
                         Spacer()
-                        Text(arraycitazioni[indicearray]).multilineTextAlignment(.center).font(.system(size: 18)).foregroundColor(.white)
+                        Text(arraycitazioni[indicearray]).fontWeight(.light).multilineTextAlignment(.center).font(.system(size: 18)).foregroundColor(.white)
                         Spacer()
                         
                         ZStack{
@@ -117,7 +118,9 @@ struct NotClickedRecButton: View {
                             changeView.toggle()
                             mic.audioRecorder.stop()
                             isPlaying.toggle()
-                            media=mic.media+160.0
+                            media=mic.media+120.0
+                            clickinternal=false
+                            clickexternal=false
                         }
                         Spacer()
                         
@@ -130,8 +133,7 @@ struct NotClickedRecButton: View {
                         
                         
                         
-                        
-                        RadialGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), center: .center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5, endRadius: 130).mask(Image(systemName: "record.circle.fill").resizable().frame(width: 150.0, height: 150.0).imageScale(.large)).frame(width: 150.0, height: 150.0).onTapGesture {
+                        RadialGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), center: .center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5, endRadius: 110).mask(Image(systemName: "record.circle.fill").resizable().frame(width: 150.0, height: 150.0).imageScale(.large)).frame(width: 150.0, height: 150.0).onTapGesture {
                             audio.startRecording()
                             isPlaying.toggle()
                             mic.startMonitoring()
@@ -139,10 +141,11 @@ struct NotClickedRecButton: View {
                         }
                         
                         Spacer()
-                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Text("Please, record an audio  of the environment ").font(.system(size: 20)).multilineTextAlignment(.center)).frame(width: 300, height: 50)
-                        
+//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Text("Please, record an audio  of the environment ").font(.system(size: 20)).multilineTextAlignment(.center)).frame(width: 300, height: 50)
+                        Text("Please, record an audio  of the environment ").foregroundColor(.white).font(.system(size: 20)).multilineTextAlignment(.center)
                         Spacer()
-                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Text("If you want a more accurate analyses  \n turn the phone upside down.").multilineTextAlignment(.center).font(.system(size: 18))).frame(width: 300, height: 100)
+//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.blue]), startPoint: .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing).mask(Text("If you want a more accurate analyses  \n turn the phone upside down.").multilineTextAlignment(.center).font(.system(size: 18))).frame(width: 300, height: 100)
+                        Text("If you want a more accurate analyses  \n turn the phone upside down.").foregroundColor(.white).multilineTextAlignment(.center).font(.system(size: 18))
                         
                         Spacer()
                     }
